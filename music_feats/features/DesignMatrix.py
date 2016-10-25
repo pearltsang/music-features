@@ -2,8 +2,7 @@ from __future__ import division
 import numpy as np
 from scipy import signal
 from math import floor
-from music.features.util import interpdata
-from music.features.util.utils import *
+from music_feats.utils import *
 
 __all__ = ['DesignMatrix']
 
