@@ -1,7 +1,8 @@
 import os
 from collections import defaultdict
-#import docdb
 #Cannot pip install
+#import docdb
+
 import numpy as np
 import tables
 import logging
@@ -35,7 +36,7 @@ def load_response_imagedocs(experiments, fromaction="DetrendSGolay"):
 
     """
     # Get the interface to the database
-    docdbi = docdb.getclient()
+    #docdbi = docdb.getclient()
 
     # Create the output dictionary
     outdict = defaultdict(list)

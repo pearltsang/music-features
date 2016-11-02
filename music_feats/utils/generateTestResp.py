@@ -3,17 +3,29 @@
 ## see documentation of each function for details on parameters/return values
 
 import numpy as np
-import docdb
+
 import os
 import sys
 import pdb
-import pycortex
+#import pycortex
 from random import shuffle, random, randint
 from itertools import chain
 from collections import defaultdict
-from cortex import get_roi_mask
-from util import save_table_file
+#from cortex import get_roi_mask
+#from util import save_table_file
 import nibabel as ni
+
+__all__ = ['generateTestR',
+			'scramble',
+			'boldlike',
+			'scrambleHelper',
+			'savenewBR',
+			'addnoise',
+			'loadShuffledIMS',
+			'retrieveMasks',
+			'createResponse',
+			'applyMask'
+           ]
 
 def generateTestR(exp, method='boldlike', fname=None, fpath='/auto/k7/lucine/projects/music/tmp', **kwargs):
 	""" Generate fake data to test pipeline with. Will call a sub function to
@@ -309,8 +321,8 @@ def loadShuffledIMS(exp, action):
 
 	"""
 
-	dbi = docdb.getclient()
-	ims = dbi.query(experiment_name=exp, generated_by_name=action)
+	#dbi = docdb.getclient()
+	#ims = dbi.query(experiment_name=exp, generated_by_name=action)
 	inds = range(len(ims))
 	shuffle(inds)
 	shuffIms = [ims[i] for i in inds]

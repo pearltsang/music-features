@@ -3,6 +3,13 @@ import cortex
 #from regression_code.huth.npp import mcorr
 from music_feats.utils.viz import separate_model_weights
 
+__all__ = ['STA',
+            'spectralCentroid',
+            'createVolume',
+            'averageDelays',
+                ]
+
+
 def STA(delRstim, zRresp, delPstims, zPresps, ndelays, modeldims):
     """Function estimates model weights using a spike-triggered average
     model. Weights are cross-validated and the results returned.

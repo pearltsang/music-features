@@ -2,6 +2,20 @@ import numpy as np
 import logging
 
 logger = logging.getLogger("text.regression.interpdata")
+__all__ = ['interpdata',
+            'sincinterp1D',
+            'sincinterp2D',
+            'lanczosinterp2D',
+            'sincupinterp2D',
+            'sincfun',
+            'lanczosfun',
+            'expinterp2D',
+            'expfun',
+            'gabor_xfm',
+            'gabor_xfm2D',
+            'test_interp'          
+            ]
+
 
 def interpdata(data, oldtime, newtime):
     """Interpolates the columns of [data] to find the values at [newtime], 
