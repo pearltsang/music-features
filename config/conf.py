@@ -305,16 +305,17 @@ html_theme_options = {
 
 # -- Build music_feats API documentation ----------------------------------------
 sys.path.append(os.path.join(os.path.dirname(__name__), '..'))
-sys.path.append(os.path.join(os.path.dirname(__name__), 'tools'))
+sys.path.append(os.path.join(os.path.dirname(__name__), './tools'))
+
 from apigen import ApiDocWriter
+
 import music_feats
 package = 'music_feats'
 module = sys.modules[package]
-outdir = '_build'
+outdir = 'api'
 docwriter = ApiDocWriter(package)
 docwriter.write_api_docs(outdir)
-#('WARNING: Empty -', 'music_feats')
 docwriter.write_index(outdir, 'api', relative_to='api')
-#('outdir: ', '')
+
 print('%d files written' % len(docwriter.written_modules))
 

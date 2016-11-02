@@ -224,6 +224,9 @@ class ApiDocWriter(object):
 
     def _path2uri(self, dirpath):
         ''' Convert directory path to uri '''
+        # The dirpath sometimes arrives as '../music_feats/../music_feats/...',
+        # so we use relpath to remove the extra prefixes
+        dirpath = os.path.relpath(dirpath)
         package_dir = self.package_name.replace('.', os.path.sep)
         relpath = dirpath.replace(self.root_path, package_dir)
         if relpath.startswith(os.path.sep):
@@ -264,10 +267,10 @@ class ApiDocWriter(object):
                 if (self._uri2path(package_uri) and
                     self._survives_exclude(package_uri)):
                     try:
-                        mod = __import__(package_uri, fromlist=['music-feats'])
+                        mod = __import__(package_uri, fromlist=['music_feats'])
                         mod.__all__
                         modules.append(package_uri)
-                    except (ImportError, AttributeError):
+                    except (ImportError, AttributeError) as e:
                         pass
         return sorted(modules)
 
