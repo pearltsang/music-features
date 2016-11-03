@@ -24,8 +24,6 @@ Module: :mod:`features.features`
    music_feats.features.features.lanczosfun
    music_feats.features.features.lanczosinterp2D
    music_feats.features.features.loadShuffledIMS
-   music_feats.features.features.load_generic_trfiles
-   music_feats.features.features.load_generic_trfiles_fi
    music_feats.features.features.load_mcparams
    music_feats.features.features.load_response_imagedocs
    music_feats.features.features.load_response_imagedocs_music_AN
@@ -35,7 +33,6 @@ Module: :mod:`features.features`
    music_feats.features.features.load_response_imagedocs_tonotopy_LO
    music_feats.features.features.load_responses
    music_feats.features.features.load_responses_test
-   music_feats.features.features.load_trfiles
    music_feats.features.features.retrieveMasks
    music_feats.features.features.savenewBR
    music_feats.features.features.scramble
@@ -49,7 +46,6 @@ Module: :mod:`features.features`
    music_feats.features.features.sincupinterp2D
    music_feats.features.features.spectralCentroid
    music_feats.features.features.test_interp
-   music_feats.features.features.undelay_model_weights
 
    music_feats.features.features.Features
    music_feats.features.features.TRFile
@@ -139,16 +135,6 @@ loadShuffledIMS
 
 .. autofunction:: music_feats.features.features.loadShuffledIMS
 
-load_generic_trfiles
---------------------
-
-.. autofunction:: music_feats.features.features.load_generic_trfiles
-
-load_generic_trfiles_fi
------------------------
-
-.. autofunction:: music_feats.features.features.load_generic_trfiles_fi
-
 load_mcparams
 -------------
 
@@ -193,11 +179,6 @@ load_responses_test
 -------------------
 
 .. autofunction:: music_feats.features.features.load_responses_test
-
-load_trfiles
-------------
-
-.. autofunction:: music_feats.features.features.load_trfiles
 
 retrieveMasks
 -------------
@@ -263,11 +244,6 @@ test_interp
 -----------
 
 .. autofunction:: music_feats.features.features.test_interp
-
-undelay_model_weights
----------------------
-
-.. autofunction:: music_feats.features.features.undelay_model_weights
 
 
 :class:`Features`

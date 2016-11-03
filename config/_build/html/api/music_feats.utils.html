@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Module: utils &mdash; Music 1.0 documentation</title>
+    <title>Module: utils &mdash; Music_Feats 1.0 documentation</title>
     
     <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -24,7 +24,7 @@
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <link rel="top" title="Music 1.0 documentation" href="../index.html" /> 
+    <link rel="top" title="Music_Feats 1.0 documentation" href="../index.html" /> 
   </head>
   <body role="document">
     <div class="related" role="navigation" aria-label="related navigation">
@@ -36,7 +36,7 @@
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">Music 1.0 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">Music_Feats 1.0 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -104,11 +104,11 @@
 <tr class="row-odd"><td><a class="reference internal" href="#music_feats.utils.loadShuffledIMS" title="music_feats.utils.loadShuffledIMS"><code class="xref py py-obj docutils literal"><span class="pre">music_feats.utils.loadShuffledIMS</span></code></a>(exp,&nbsp;action)</td>
 <td>Queries and returns bold responses from docdb, after shuffling them</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#music_feats.utils.load_generic_trfiles" title="music_feats.utils.load_generic_trfiles"><code class="xref py py-obj docutils literal"><span class="pre">music_feats.utils.load_generic_trfiles</span></code></a>(respdict)</td>
-<td>Loads a dictionary of generic TRFiles (i.e.</td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">music_feats.utils.load_generic_trfiles</span></code></td>
+<td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#music_feats.utils.load_generic_trfiles_fi" title="music_feats.utils.load_generic_trfiles_fi"><code class="xref py py-obj docutils literal"><span class="pre">music_feats.utils.load_generic_trfiles_fi</span></code></a>(...)</td>
-<td>Loads a dictionary of generic TRFiles (i.e.</td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">music_feats.utils.load_generic_trfiles_fi</span></code></td>
+<td></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#music_feats.utils.load_mcparams" title="music_feats.utils.load_mcparams"><code class="xref py py-obj docutils literal"><span class="pre">music_feats.utils.load_mcparams</span></code></a>(respdict)</td>
 <td>This function loads motion correction parameter estimates for the listed images.</td>
@@ -137,8 +137,8 @@
 <tr class="row-even"><td><a class="reference internal" href="#music_feats.utils.load_responses_test" title="music_feats.utils.load_responses_test"><code class="xref py py-obj docutils literal"><span class="pre">music_feats.utils.load_responses_test</span></code></a>(...[,&nbsp;...])</td>
 <td>This is a version of load_responses() from above, modified to work with fake data.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#music_feats.utils.load_trfiles" title="music_feats.utils.load_trfiles"><code class="xref py py-obj docutils literal"><span class="pre">music_feats.utils.load_trfiles</span></code></a>(respdict[,&nbsp;root])</td>
-<td>Loads a dictionary of TRFiles for the given responses</td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">music_feats.utils.load_trfiles</span></code></td>
+<td></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#music_feats.utils.retrieveMasks" title="music_feats.utils.retrieveMasks"><code class="xref py py-obj docutils literal"><span class="pre">music_feats.utils.retrieveMasks</span></code></a>(subj,&nbsp;xfms,&nbsp;rois)</td>
 <td>Retrieve the ROI mask that will be used</td>
@@ -179,7 +179,7 @@
 <tr class="row-even"><td><a class="reference internal" href="#music_feats.utils.test_interp" title="music_feats.utils.test_interp"><code class="xref py py-obj docutils literal"><span class="pre">music_feats.utils.test_interp</span></code></a>(**kwargs)</td>
 <td>Tests sincinterp2D passing it the given [kwargs] and interpolating known signals</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#music_feats.utils.undelay_model_weights" title="music_feats.utils.undelay_model_weights"><code class="xref py py-obj docutils literal"><span class="pre">music_feats.utils.undelay_model_weights</span></code></a>(...)</td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">music_feats.utils.undelay_model_weights</span></code></td>
 <td></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#music_feats.utils.TRFile" title="music_feats.utils.TRFile"><code class="xref py py-obj docutils literal"><span class="pre">music_feats.utils.TRFile</span></code></a>(trfilename[,&nbsp;...])</td>
@@ -906,58 +906,9 @@ be used to calculate the low-pass cutoff of the interpolation filter.</p>
 </div>
 <div class="section" id="load-generic-trfiles">
 <h2>load_generic_trfiles<a class="headerlink" href="#load-generic-trfiles" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="music_feats.utils.load_generic_trfiles">
-<code class="descclassname">music_feats.utils.</code><code class="descname">load_generic_trfiles</code><span class="sig-paren">(</span><em>respdict</em>, <em>root='/auto/k1/huth/text/story/stimreports/generic'</em><span class="sig-paren">)</span><a class="headerlink" href="#music_feats.utils.load_generic_trfiles" title="Permalink to this definition">¶</a></dt>
-<dd><p>Loads a dictionary of generic TRFiles (i.e. not specifically from the
-session in which the data was collected.. this should be fine) for the
-given responses</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>respdict</strong> : dict</p>
-<blockquote>
-<div><p>Response dictionary</p>
-</div></blockquote>
-<p><strong>root</strong> : &#8220;str&#8221;</p>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">dict</p>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
 </div>
 <div class="section" id="load-generic-trfiles-fi">
 <h2>load_generic_trfiles_fi<a class="headerlink" href="#load-generic-trfiles-fi" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="music_feats.utils.load_generic_trfiles_fi">
-<code class="descclassname">music_feats.utils.</code><code class="descname">load_generic_trfiles_fi</code><span class="sig-paren">(</span><em>stimuli</em>, <em>subject</em>, <em>root='data/trfiles'</em><span class="sig-paren">)</span><a class="headerlink" href="#music_feats.utils.load_generic_trfiles_fi" title="Permalink to this definition">¶</a></dt>
-<dd><p>Loads a dictionary of generic TRFiles (i.e. not specifically from the
-session in which the data was collected.. this should be fine) for the
-given stimuli.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>respdict</strong> : dict</p>
-<blockquote>
-<div><p>Response dictionary</p>
-</div></blockquote>
-<p><strong>subject</strong> : subject</p>
-<p><strong>root</strong> : &#8220;str&#8221;</p>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">dict</p>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
 </div>
 <div class="section" id="load-mcparams">
 <h2>load_mcparams<a class="headerlink" href="#load-mcparams" title="Permalink to this headline">¶</a></h2>
@@ -1188,26 +1139,6 @@ fake data. Only difference is that experimentnames is omitted.</p>
 </div>
 <div class="section" id="load-trfiles">
 <h2>load_trfiles<a class="headerlink" href="#load-trfiles" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="music_feats.utils.load_trfiles">
-<code class="descclassname">music_feats.utils.</code><code class="descname">load_trfiles</code><span class="sig-paren">(</span><em>respdict</em>, <em>root='/auto/data/archive/mri/stimreports/'</em><span class="sig-paren">)</span><a class="headerlink" href="#music_feats.utils.load_trfiles" title="Permalink to this definition">¶</a></dt>
-<dd><p>Loads a dictionary of TRFiles for the given responses
-Parameters
-&#8212;&#8212;&#8212;-
-respdict : dict</p>
-<blockquote>
-<div>Response dictionary</div></blockquote>
-<p>root : &#8220;str&#8221;</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">dict</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
 </div>
 <div class="section" id="retrievemasks">
 <h2>retrieveMasks<a class="headerlink" href="#retrievemasks" title="Permalink to this headline">¶</a></h2>
@@ -1706,11 +1637,6 @@ between the two time domains</p>
 </div>
 <div class="section" id="undelay-model-weights">
 <h2>undelay_model_weights<a class="headerlink" href="#undelay-model-weights" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="music_feats.utils.undelay_model_weights">
-<code class="descclassname">music_feats.utils.</code><code class="descname">undelay_model_weights</code><span class="sig-paren">(</span><em>vwts</em>, <em>ndelays</em><span class="sig-paren">)</span><a class="headerlink" href="#music_feats.utils.undelay_model_weights" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </div>
 <div class="section" id="trfile">
 <h2><a class="reference internal" href="#music_feats.utils.TRFile" title="music_feats.utils.TRFile"><code class="xref py py-class docutils literal"><span class="pre">TRFile</span></code></a><a class="headerlink" href="#trfile" title="Permalink to this headline">¶</a></h2>
@@ -1926,11 +1852,11 @@ ntrs : ntrs</p>
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">Music 1.0 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">Music_Feats 1.0 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &copy; Copyright 2016, Pearl Tsang.
+        &copy; Copyright 2016.
       Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.1.
     </div>
   </body>
