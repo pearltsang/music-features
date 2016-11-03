@@ -16,6 +16,19 @@ import cortex
 # changed story to song, not sure if it will work
 logger = logging.getLogger("song.util.response_utils")
 
+__all__ = ['load_response_imagedocs',
+            'load_response_imagedocs_music_AN',
+            'load_response_imagedocs_speech_AN',
+            'load_response_imagedocs_tonotopy_LO',
+            'load_response_imagedocs_tonotopy_AN',
+            'load_response_imagedocs_test',
+            'dilate_mask',
+            'load_mcparams',
+            'load_responses',
+            'load_responses_test',
+            '_load_responses',
+            'selectROI'
+            ]
 
 def load_response_imagedocs(experiments, fromaction="DetrendSGolay"):
     """Loads music responses from the given [experiments]. All images generated
@@ -202,7 +215,6 @@ def dilate_mask(mask, ktype):
     kernel = mo.generate_binary_structure(3, ktype)
     return mo.binary_dilation(mask, kernel)
 
-
 def load_mcparams(respdict):
     """This function loads motion correction parameter estimates for the listed
     images.
@@ -234,7 +246,6 @@ def load_mcparams(respdict):
         mcparams[song] = sum(mcdata) / len(mcdata)
 
     return mcparams
-
 
 def load_responses(respdict, mask, cachedir="/auto/k8/loganesian/respcache/",
                    force_reload=True, multiseries="mean"):
@@ -341,7 +352,6 @@ def load_responses_test(respdict, mask, cachedir="/auto/k8/loganesian/respcache/
     save_table_file(cachefilename, resparrs)
 
     return resparrs
-
 
 def _load_responses(respdict, mask, multiseries):
     """Loads actual response data from the dictionary of lists of response image

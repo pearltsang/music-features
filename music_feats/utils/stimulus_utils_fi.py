@@ -3,6 +3,8 @@ import numpy as np
 from collections import defaultdict
 
 
+__all__ = ['TRFile']
+
 class TRFile(object):
     """
     Loads data from [trfilename], should be output from stimulus

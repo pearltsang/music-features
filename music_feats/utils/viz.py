@@ -1,6 +1,10 @@
 import numpy as np
 import operator
 
+__all__ = ['separate_voxel_model_weights',
+            'separate_model_weights',        
+            ]
+
 def separate_voxel_model_weights(vwt, ndelays, modeldims):
     """ Takes a voxel weight vector [vwt] and separates out the
     weights for each model. Returns a list of DxNi matrices, where
