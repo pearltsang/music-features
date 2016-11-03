@@ -54,9 +54,9 @@ source_suffix = ['.rst', '.md', '.txt']
 master_doc = 'index'
 
 # General information about the project.
-project = u'Music'
-copyright = u'2016, Pearl Tsang'
-author = u'Pearl Tsang'
+project = u'Music_Feats'
+copyright = u'2016'
+author = u''
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
