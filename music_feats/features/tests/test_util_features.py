@@ -9,6 +9,7 @@ import librosa, math
 import os
 from os.path import join as pjoin
 
+
 sr = 44100
 n_fft = 2048
 
@@ -96,13 +97,15 @@ class TestRMS:
     #     assert corr >= 0.95 # assert 95% correlation b/w zscores
 
     def test_againstLIBROSA_testalt(self):
-        my_val = extractor.rms(test_alt, win_length=n_fft / sr, decomposition=True)
+        #win lengths?
+
+        my_val = extractor.rms(test_alt, hop_length=n_fft / sr, decomposition=True)
         lib_val = librosa.feature.rmse(y=test_alt, n_fft=n_fft, hop_length=n_fft/2)
         corr = calculateZcorr(my_val, retrieveLibrosaValue(lib_val))
         assert corr >= 0.95 # assert 95% correlation b/w zscores
 
     def test_againstLIBROSA_testToySig3Pure(self):
-        my_val = extractor.rms(signal3, win_length=n_fft / sr, decomposition=True)
+        my_val = extractor.rms(signal3, hop_length=n_fft / sr, decomposition=True)
         lib_val = librosa.feature.rmse(y=signal3, n_fft=n_fft, hop_length=n_fft/2)
         corr = calculateZcorr(my_val, retrieveLibrosaValue(lib_val))
         assert corr >= 0.95 # assert 95% correlation b/w zscores
